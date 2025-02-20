@@ -1,10 +1,10 @@
-package org.generation.italy.web.bedbreakfast;
+package org.generation.italy.web.biblioteca;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BedbreakfastApplicationTests {
+class BibliotecaApplicationTests {
 
 	@Test
 	void contextLoads() {

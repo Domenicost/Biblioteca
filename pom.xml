@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.generation.italy.web</groupId>
-	<artifactId>bedbreakfast</artifactId>
+	<artifactId>biblioteca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bedbreakfast</name>
+	<name>biblioteca</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
