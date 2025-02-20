@@ -1,23 +1,31 @@
-## Esercizio: Bed and breakfast
+### Entità
 
-Creare un programma per la gestione di un bed and breakfast che dispone di più stanze
+Libro (id,autore,titolo, copieDisp)
+Prestito (id, dataInizio, dataFine)
+Utente (id, nome, telefono)
 
-Le funzionalità da sviluppare sono:
-- Gestione prenotazioni: per ogni prenotazione memorizzare: data check-in, data check-out, nr persone, nominativo di riferimento, tel. riferimento, estremi documento, soggiorno (true/false)
- 
-    Sottofunzionalità:
-        - aggiungi prenotazione
-        - annulla prenotazione
-        - visualizza prenotazioni
+### Endpoint da esporre:
 
-- Gestione recensioni: 
-    - ricevi recensione: per ogni prenotazione divenuta soggiorno è possibile ricevere una recensione composta da un numero di stelle da 1 a 5 e da un testo descrittivo
-    - visualizza recensioni: mostra tutte le recensioni ricevute e la media delle stelle ottenute
-    - genera recensioni: è possibile generare delle recensioni "fake" utilizzando l'intelligenza artificiale. L'utente decide quante recensioni generare e per ognuna delle recensioni generate l'intervallo di stelle da ottenere
+Elenco libri (eventualmente filtrati per
+autore e/o per titolo)
+Aggiungi libro
+Modifica libro (possibile modificare nrcopie)
+Elimina libro (non possibile se prestiti in
+corso)
 
+Aggiungi prestito (impostare dataInizio alla
+data attuale, posso farlo se nrcopie>0.
+Aggiornare nrcopie disponibili)
+Restituisci prestito (impostare dataFine alla
+data attuale. Aggiornare nrcopie disponibili)
 
-### Versione 2
-- Realizzare una classe Controller che espone i metodi del Bed and Breakfast.
-- All'interno del controller creare un oggetto della classe BedAndBreakfast (se non l'avete già fatto, crearla) con un metodo pubblico per ogni funzionalità.
-- Realizzare un endpoint per ogni metodo da richiamare
-- Testare ogni endpoint con lo strumento di preferenza (Postman, APIDog, ThunderClient)
+Elenco prestiti (per ogni prestito restituire i
+dati del prestito, dell'utente e del libro
+interessato).
+
+- Filtri opzionali:
+- data inizio
+- data fine
+- non restituiti (vero/falso)
+
+Elenco utenti
